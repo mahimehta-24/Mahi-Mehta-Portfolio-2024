@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style> 
+      *{
+                  font-family: 'Poppins', sans-serif;
+                  border: none;
+                  font-size: medium;
+                 
+              }
+      
+          
+       /* Footer */
+       footer {
+                  background-color: #1f1f1f;
+                  color: white;
+                  padding: 30px 0;
+                  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+              }
+      
+              footer .fab {
+                  font-size: 1.5rem;
+              }
+      
+              footer .social-icons a {
+                  margin: 0 10px;
+                  color: white;
+                  transition: color 0.3s ease;
+              }
+      
+              footer .social-icons a:hover {
+                  color: #f0f0f0;
+              }
+              
+      </style>
+      </head>
+      <body>
+         <!-- Navbar-->
+      <nav class="navbar navbar-expand-lg" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); background-color: #1f1f1f;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="end term copy.html" style="color: #f0f0f0;">MM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border-color: white;">
+                <span class="navbar-toggler-icon" style="background-color: white; width: 25px; height: 3px; display: block; margin: 4px 0;"></span>
+                <span class="navbar-toggler-icon" style="background-color: white; width: 25px; height: 3px; display: block; margin: 4px 0;"></span>
+                <span class="navbar-toggler-icon" style="background-color: white; width: 25px; height: 3px; display: block; margin: 4px 0;"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #1f1f1f;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #f0f0f0;">MM</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" style="color: #f0f0f0;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme2.html" style="color: #f0f0f0;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#services" style="color: #f0f0f0;">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project.html" style="color: #f0f0f0;">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#main" style="color: #f0f0f0;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </nav>
+      
+      
+      
+      
+      <style>
+        .nav-link {
+          color: #f8f7f7; /* Default text color */
+          text-decoration: none; /* Remove underline by default */
+          transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+      
+        .nav-link:hover {
+          color: #fefafa; /* Optional: Make the text slightly bolder on hover */
+          text-decoration: underline; /* Add underline on hover */
+        }
+      
+        .nav-link.active {
+          font-weight: bold; /* Bold the active link */
+          text-decoration: underline; /* Optional: Also underline the active link */
+        }
+      </style>
+      <br>
+      
+      <div class="container mt-2">
+ <!--INTRO IMAGE-->
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 300px; ">
+  <div class="col-lg-8 col-md-10 col-sm-12 col-12">
+    <img class="img-fluid" 
+         src="Images/PICTURES/Artboard 38.png" 
+         alt="design" 
+         style="border-radius: 10px;">
+  </div>
+</div>
+
+
+
+   
+   
+   <!--contact me-->
+    <section id="contact">
+        <div class="container-lg">
+        <div class="text-center">
+        <h2 style="color:#2824FD; padding-top: 15px; font-weight: 700;">Get in Touch</h2>
+        <p class="lead">Questions to ask? Fill out the form to contact me directly...</p> 
+      </div>
+      
+        <div class="row justify-content-center my-5">
+      
+          <div class="col-lg-6">
+      <form>
+        <label for="email" class="form label">Email address:</label>
+        <div class="mb-4 input-group">
+         <span class="input-group-text">
+          <i class="bi bi-envelope-fill"></i>
+         </span>
+          <input type="email" class="form-control" id="email" placeholder="eg.mario@example.com">
+          <!--tooltip-->
+          <span class="input-group-text">
+            <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+            <i class="bi bi-question-circle text-muted"></i>
+          </span>
+           </span>
+        </div>
+        
+      
+        <label for="name" class="for-label">Name</label>
+        <div class="mb-4 input-group">
+          <span class="input-group-text">
+            <i class="bi bi-person-fill"></i>
+          </span>
+        <input type="text" class="form-control" id="name" placeholder="eg.mario">
+        <!--tooltip
+        <span class="input-group-text">
+          <span class="tt" data-bs-placement="top" title="self explanatory">
+          <i class="bi bi-question-circle text-muted"></i>
+        </span>
+         </span>-->
+      </div>
+      
+      
+        <label for="subject" class="form-label">What is your question about?</label>
+        <div class="input-group mb-4">
+          <span class="input-group-text">
+            <i class="bi bi-chat-right-dots-fill"></i>
+           </span>
+          <select class="form-select" id="subject">
+            <option value="project" selected >Design service Inquiry</option>
+            <option value="work-related">Project Collaboration</option> 
+            <option value="other">General Inquiry</option>
+            </select>
+        </div>
+      
+      
+        
+        <div class="form-floating mb-4 mt-5"><textarea id="query" class="form-control" style="height: 140px" ></textarea>
+          <label for="query">Your query....</label>
+        </div>
+      <div class="mb-4 text-center">
+        <a class="btn btn-sm" 
+        style="background-color: #2824FD; color: aliceblue; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease;" 
+        href="#" 
+        role="button"
+        onmouseover="this.style.backgroundColor='#1b1aeb';" 
+        onmouseout="this.style.backgroundColor='#2824FD';"
+        onmousedown="this.style.backgroundColor='#1214c3';"
+        onmouseup="this.style.backgroundColor='#1b1aeb';">
+        Submit
+     </a>
+       <!-- <button type="submit" class="btn btn-primary">Submit</button>-->
+      </div>
+      </form>
+          </div>
+        </div>
+        </div>
+        </section>
+
+        
+        <br> <br>
+
+      </div>
+        <!-- Footer -->
+        <footer>
+         <div class="container text-center">
+             <p class="mb-2">Get in touch</p>
+             <div class="social-icons">
+                 <a href="https://www.linkedin.com" class="fab fa-linkedin"></a>
+                 <!--<a href="https://www.instagram.com" class="fab fa-instagram"></a>-->
+                 <a href="https://www.behance.net" class="fab fa-behance"></a>
+                 <!--<a href="#" class="text-white me-3">
+                   <i class="fab fa-twitter"></i>
+               </a>-->
+             </div>
+             <p class="mt-4">© 2024 MM. All Rights Reserved.</p>
+         </div>
+       </footer>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+<script>
+  const tooltips
+  =
+  document.querySelectorAll('.tt')
+  tooltips.forEach(t => {
+  new bootstrap.Tooltip(t)
+  }) </script>
+  </body>
+</html>
